@@ -1,0 +1,6 @@
+PyPDF2
+together
+streamlit
+streamlit_chat
+langchain
+huggingface_hub
