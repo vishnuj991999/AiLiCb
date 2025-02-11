@@ -73,7 +73,7 @@ else:
         assistant_response = client.text_generation(
             model="deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",  # Ensure model availability on HF
             prompt=f"{system_content}\nUser: {user_prompt}\nAssistant:",
-            max_new_tokens=500
+            max_new_tokens=1000
         )
         assistant_response1=assistant_response.split("</think>")
         assistant_response2=assistant_response1[1]
