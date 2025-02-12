@@ -3,6 +3,10 @@ from huggingface_hub import InferenceClient
 import streamlit as st
 from streamlit_chat import message
 from langchain.memory import ConversationBufferWindowMemory
+import random
+
+aa=["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","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","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"]
+bb=random.choice(aa)
 
 # Hardcoded credentials (Replace with a secure method in production)
 VALID_USER_ID = "ailite"
@@ -45,7 +49,7 @@ else:
     )
 
     # Initialize Hugging Face Inference Client (✅ Fixed)
-    client = InferenceClient(api_key="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")  # Replace with your Hugging Face API key
+    client = InferenceClient(api_key=bb)  # Replace with your Hugging Face API key
 
     # Streamlit UI for chatbot
     st.subheader("AiLite ChatBot")
